@@ -27,7 +27,7 @@ git remote add origin https://github.com/tqisjim/google-oauth.git
 if you face any issue with above step then the git remote remove origin
 for the very 1st time go with push command otherwise 1st pull then push
 git pull origin master
-git push -u origin master
+git push -u origin master (username: avinashrana and PWD: Pa******d@9**7
 
 
 Downalod Links
