@@ -19,12 +19,16 @@ Error: if you are facing Build failed: Clean
 then it must be bcoz your window explorer are opened with Package opened as well. Close all window explorer (https://developer.automationanywhere.com/blog/a2019-tutorial-how-to-build-a-twilio-pack)
 
 GIT
-1. create one folder -> right click -> git bash here
+1. Create a repo at GITHUB and copy HTTPS URLS -> create one folder on local -> right click -> git bash here
 2. git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/tqisjim/google-oauth.git
+if you face any issue with above step then the git remote remove origin
+for the very 1st time go with push command otherwise 1st pull then push
+git pull origin master
 git push -u origin master
+
 
 Downalod Links
 1. GIT -> https://git-scm.com/download/win
