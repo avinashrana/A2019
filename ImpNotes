@@ -1,0 +1,37 @@
+
+gradlew.bat clean build shadowJar
+
+Error: If you are getting errro -> ERROR: JAVA_HOME is set to an invalid directory: C:\Program Files\Java\jdk-11.0.11\bin
+
+then go to gradlew.bat file -> 
+:findJavaFromJavaHome
+set JAVA_HOME=%JAVA_HOME:"=%
+set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+
+The error is that it is appedning the extra path in our java JDK path and if we echo %JAVA_HOME% then
+we ll found out that it is priniting C:\Program Files\Java\jdk-11.0.11\bin/bin/java.exe
+
+So the resolution is ->
+set JAVA_EXE=%JAVA_HOME%\java.exe
+BLOG Reference (https://stackoverflow.com/questions/44081972/windows-10-gradle-java-home-is-set-to-an-invalid-directory)
+
+Error: if you are facing Build failed: Clean
+then it must be bcoz your window explorer are opened with Package opened as well. Close all window explorer (https://developer.automationanywhere.com/blog/a2019-tutorial-how-to-build-a-twilio-pack)
+
+GIT
+1. create one folder -> right click -> git bash here
+2. git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/tqisjim/google-oauth.git
+git push -u origin master
+
+Downalod Links
+1. GIT -> https://git-scm.com/download/win
+2. A2019 -> https://developer.automationanywhere.com/learn/bot-developer-journey/creating-custom-packages
+https://developer.automationanywhere.com/build/custom-action-packages
+https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/developer/cloud-create-package-overview.html?_gl=1*1y0tss*_ga*MTU3ODM4MzQ2OS4xNjE5MTcyMzAx*_ga_DG1BTLENXK*MTYxOTE3MjI5Ny4xLjEuMTYxOTE3Mjk2MS42MA..&_ga=2.134337905.1871600487.1619172301-1578383469.1619172301
+
+3. IntelliJ comm version -> https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC
+
+4. Downlaod Java JDK V11 or above
